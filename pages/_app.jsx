@@ -1,11 +1,18 @@
 import React from "react";
-import App from "next/app";
+import App, { Container } from "next/app";
+import Layout from "../components/layout/Layout";
 
 class MyApp extends App {
 	render() {
 		const { Component, pageProps } = this.props;
 
-		return <Component {...pageProps} />;
+		return (
+			<Container>
+				<Layout>
+					<Component {...pageProps} />
+				</Layout>
+			</Container>
+		);
 	}
 }
 
