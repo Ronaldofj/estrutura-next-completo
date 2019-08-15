@@ -1,0 +1,12 @@
+{
+	"presets": ["next/babel"],
+	"plugins": [
+		[
+			"styled-components",
+			{
+				"ssr": true
+				// Essa config. habilita o render do Css no servidor.
+			}
+		]
+	]
+}

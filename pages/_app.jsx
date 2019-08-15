@@ -1,6 +1,14 @@
 import React from "react";
 import App, { Container } from "next/app";
+import { ThemeProvider } from "styled-components";
+
 import Layout from "../components/layout/Layout";
+
+const theme = {
+	color: {
+		primary: "#f0f0f0"
+	}
+};
 
 class MyApp extends App {
 	render() {
@@ -8,9 +16,11 @@ class MyApp extends App {
 
 		return (
 			<Container>
-				<Layout>
-					<Component {...pageProps} />
-				</Layout>
+				<ThemeProvider theme={theme}>
+					<Layout>
+						<Component {...pageProps} />
+					</Layout>
+				</ThemeProvider>
 			</Container>
 		);
 	}
