@@ -1,8 +1,18 @@
 {
-  "name": "estrutura-next-completo",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/Ronaldofj/estrutura-next-completo.git",
-  "author": "Ronaldo <ronaldofigueiredojr@hotmail.com>",
-  "license": "MIT"
+	"name": "estrutura-next-completo",
+	"version": "1.0.0",
+	"main": "index.js",
+	"repository": "https://github.com/Ronaldofj/estrutura-next-completo.git",
+	"author": "Ronaldo <ronaldofigueiredojr@hotmail.com>",
+	"license": "MIT",
+	"scripts": {
+		"dev": "next",
+		"start": "next start",
+		"build": "next build"
+	},
+	"dependencies": {
+		"next": "^9.0.3",
+		"react": "^16.9.0",
+		"react-dom": "^16.9.0"
+	}
 }
